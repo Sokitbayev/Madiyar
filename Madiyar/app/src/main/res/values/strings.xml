@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Madiyar</string>
+    <string name="logo_temp">Logo Temp</string>
+    <string name="slogan_big">Заказывайте продукты прямо со двора</string>
+    <string name="slogan_small">Подключайся и будь на связи.</string>
+    <string name="enter">Войти</string>
+    <string name="not_registered">Нет аккаунта?</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="sms_code">Код из смс</string>
+    <string name="send_code_again">Отправить еще раз</string>
+    <string name="send_code">Отправить</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="tv_new_password_info">Введите новый пароль. Вы сразу авторизуетесь в приложении.</string>
+    <string name="enter_city">Укажите ваш город</string>
+    <string name="lets_begin_registration">Давайте начнем процесс регистрации с вашего города, чтобы загрузить карту</string>
+    <string name="next">Далее</string>
+    <string-array name="cities">
+        <item>Алматы</item>
+        <item>Астана</item>
+        <item>Каскелен</item>
+        <item>Костанай</item>
+    </string-array>
+</resources>

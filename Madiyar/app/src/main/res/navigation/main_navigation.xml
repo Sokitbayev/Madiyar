@@ -2,11 +2,56 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation.xml">
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/startFragment">
 
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.madiyar.MainActivity"
-        android:label="start_fragment"
-        tools:layout="@layout/start_fragment" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.madiyar.registrationandauth.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_entranceFragment2"
+            app:destination="@id/entranceFragment2" />
+        <action
+            android:id="@+id/action_startFragment_to_cityFragment"
+            app:destination="@id/cityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entranceFragment2"
+        android:name="com.example.madiyar.registrationandauth.EntranceFragment"
+        android:label="EntranceFragment"
+        tools:layout="@layout/fragment_entrance">
+        <action
+            android:id="@+id/action_entranceFragment2_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.madiyar.registrationandauth.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_smsCodeFragment"
+            app:destination="@id/smsCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/smsCodeFragment"
+        android:name="com.example.madiyar.registrationandauth.SmsCodeFragment"
+        android:label="fragment_sms_code"
+        tools:layout="@layout/fragment_sms_code" >
+        <action
+            android:id="@+id/action_smsCodeFragment_to_newPasswordFragment"
+            app:destination="@id/newPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.example.madiyar.registrationandauth.NewPasswordFragment"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password" />
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.example.madiyar.registrationandauth.CityFragment"
+        android:label="fragment_city"
+        tools:layout="@layout/fragment_city" />
 </navigation>

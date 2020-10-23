@@ -15,6 +15,7 @@
     <string name="enter_city">Укажите ваш город</string>
     <string name="lets_begin_registration">Давайте начнем процесс регистрации с вашего города, чтобы загрузить карту</string>
     <string name="next">Далее</string>
+    <string name="image_description">Не удалось загрузить</string>
     <string-array name="cities">
         <item>Алматы</item>
         <item>Астана</item>

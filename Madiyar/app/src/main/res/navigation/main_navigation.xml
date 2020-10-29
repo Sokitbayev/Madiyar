@@ -11,19 +11,19 @@
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action
-            android:id="@+id/action_startFragment_to_entranceFragment2"
-            app:destination="@id/entranceFragment2" />
+            android:id="@+id/action_startFragment_to_entranceFragment"
+            app:destination="@id/entranceFragment" />
         <action
             android:id="@+id/action_startFragment_to_cityFragment"
             app:destination="@id/cityFragment" />
     </fragment>
     <fragment
-        android:id="@+id/entranceFragment2"
+        android:id="@+id/entranceFragment"
         android:name="com.example.madiyar.registrationandauth.EntranceFragment"
         android:label="EntranceFragment"
         tools:layout="@layout/fragment_entrance">
         <action
-            android:id="@+id/action_entranceFragment2_to_forgotPasswordFragment"
+            android:id="@+id/action_entranceFragment_to_forgotPasswordFragment"
             app:destination="@id/forgotPasswordFragment" />
     </fragment>
     <fragment
@@ -53,5 +53,23 @@
         android:id="@+id/cityFragment"
         android:name="com.example.madiyar.registrationandauth.CityFragment"
         android:label="fragment_city"
-        tools:layout="@layout/fragment_city" />
+        tools:layout="@layout/fragment_city" >
+        <action
+            android:id="@+id/action_cityFragment_to_addressFragment"
+            app:destination="@id/addressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.example.madiyar.registrationandauth.AddressFragment"
+        android:label="fragment_address"
+        tools:layout="@layout/fragment_address" >
+        <action
+            android:id="@+id/action_addressFragment_to_finalRegistrationFragment"
+            app:destination="@id/finalRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalRegistrationFragment"
+        android:name="com.example.madiyar.registrationandauth.FinalRegistrationFragment"
+        android:label="fragment_final_registration"
+        tools:layout="@layout/fragment_final_registration" />
 </navigation>

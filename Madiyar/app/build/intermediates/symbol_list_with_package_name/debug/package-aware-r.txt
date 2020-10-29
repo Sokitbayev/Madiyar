@@ -1,4 +1,4 @@
-com.example.madiyar
+com.example.android.trackmysleepquality
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -48,10 +48,6 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
-animator nav_default_enter_anim
-animator nav_default_exit_anim
-animator nav_default_pop_enter_anim
-animator nav_default_pop_exit_anim
 array cities
 attr action
 attr actionBarDivider
@@ -284,7 +280,6 @@ attr drawableTint
 attr drawableTintMode
 attr drawableTopCompat
 attr drawerArrowStyle
-attr drawerLayoutStyle
 attr dropDownListViewStyle
 attr dropdownListPreferredItemHeight
 attr duration
@@ -497,7 +492,6 @@ attr maxVelocity
 attr maxWidth
 attr measureWithLargestChild
 attr menu
-attr mimeType
 attr minHeight
 attr minWidth
 attr mock_diagonalsColor
@@ -656,7 +650,6 @@ attr tabTextAppearance
 attr tabTextColor
 attr tabUnboundedRipple
 attr targetId
-attr targetPackage
 attr telltales_tailColor
 attr telltales_tailScale
 attr telltales_velocityMode
@@ -723,7 +716,6 @@ attr trackTint
 attr trackTintMode
 attr transitionDisable
 attr transitionEasing
-attr transitionFlags
 attr transitionPathRotate
 attr triggerId
 attr triggerReceiver
@@ -976,7 +968,6 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
-dimen def_drawer_elevation
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
 dimen design_bottom_navigation_active_item_min_width
@@ -1235,6 +1226,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable shop
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1282,6 +1274,7 @@ id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
 id action0
+id action_addressFragment_to_finalRegistrationFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1289,19 +1282,26 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
+id action_cityFragment_to_addressFragment
 id action_container
 id action_context_bar
 id action_divider
+id action_entranceFragment_to_forgotPasswordFragment
+id action_forgotPasswordFragment_to_smsCodeFragment
 id action_image
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_smsCodeFragment_to_newPasswordFragment
+id action_startFragment_to_cityFragment
+id action_startFragment_to_entranceFragment
 id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addressFragment
 id alertTitle
 id aligned
 id all
@@ -1316,7 +1316,6 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
 id baseline
-id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
@@ -1324,10 +1323,11 @@ id bounce
 id btn_confirm_code
 id btn_enter
 id btn_next
-id button
+id btn_register
+id btn_submit
 id buttonPanel
-id cache_measures
 id cancel_action
+id card_view
 id center
 id center_horizontal
 id center_vertical
@@ -1336,7 +1336,8 @@ id chains
 id checkbox
 id checked
 id chronometer
-id city_page
+id cityFragment
+id city_layout
 id clip_horizontal
 id clip_vertical
 id collapseActionView
@@ -1347,12 +1348,12 @@ id coordinator
 id cos
 id custom
 id customPanel
+id dataBinding
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
 id deltaRelative
-id dependency_ordering
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1381,11 +1382,16 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id entrance_page
+id entranceFragment
+id entrance_layout
+id et_additional_description
+id et_apartment_number
+id et_home_address
+id et_name
 id et_new_password
 id et_new_password_confirm
 id et_password
-id et_phone
+id et_phone_number
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1393,18 +1399,18 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id finalRegistrationFragment
 id fixed
 id flip
 id forever
-id forgot_password_page
+id forgotPasswordFragment
+id forgot_password_layout
 id fragment_container_view_tag
 id ghost_view
-id ghost_view_holder
 id gone
 id graph
 id graph_wrap
 id group_divider
-id grouping
 id groups
 id home
 id homeAsUp
@@ -1421,6 +1427,7 @@ id italic
 id item_touch_helper_previous_elevation
 id iv_city
 id iv_logo
+id iv_shop
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -1443,11 +1450,11 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id myNavHostFragment
 id nav_controller_view_tag
-id nav_host_fragment_container
 id navigation_xml
 id navigation_header_container
 id never
-id new_password
+id newPasswordFragment
+id new_password_layout
 id none
 id normal
 id notification_background
@@ -1455,6 +1462,8 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id onAttachStateChangeListener
+id onDateChanged
 id outline
 id packed
 id parallax
@@ -1477,10 +1486,10 @@ id reverseSawtooth
 id right
 id right_icon
 id right_side
+id save_image_matrix
 id save_non_transition_alpha
-id save_overlay_view
+id save_scale_type
 id sawtooth
-id score_layout
 id screen
 id scroll
 id scrollIndicatorDown
@@ -1505,7 +1514,8 @@ id showHome
 id showTitle
 id sin
 id smallLabel
-id sms_code
+id smsCodeFragment
+id sms_code_layout
 id snackbar_action
 id snackbar_text
 id snap
@@ -1522,8 +1532,10 @@ id src_in
 id src_over
 id standard
 id start
+id startFragment
 id startHorizontal
 id startVertical
+id start_layout
 id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
@@ -1546,10 +1558,13 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textWatcher
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id til_password
+id til_phone_number
 id time
 id title
 id titleDividerNoCustom
@@ -1578,6 +1593,9 @@ id tv_send_code_again
 id tv_slogan_big
 id tv_slogan_small
 id tv_sms_code
+id tv_sms_confirm
+id tv_specify_address
+id tv_usage_condition
 id unchecked
 id uniform
 id unlabeled
@@ -1594,7 +1612,6 @@ integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
 integer bottom_sheet_slide_duration
 integer cancel_button_image_alpha
-integer config_navAnimTime
 integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
@@ -1660,8 +1677,10 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_address
 layout fragment_city
-layout fragment_entrace
+layout fragment_entrance
+layout fragment_final_registration
 layout fragment_forgot_password
 layout fragment_new_password
 layout fragment_sms_code
@@ -1730,6 +1749,7 @@ string fab_transformation_sheet_behavior
 string forgot_password
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string image_description
 string lets_begin_registration
 string logo_temp
 string mtrl_chip_close_icon_content_description
@@ -1743,14 +1763,18 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string register
 string search_menu_title
 string send_code
 string send_code_again
 string slogan_big
 string slogan_small
 string sms_code
+string sms_confirm
+string specify_address
 string status_bar_notification_info_overflow
 string tv_new_password_info
+string usage_condition
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -2263,7 +2287,7 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
-styleable ActivityNavigator android_name action data dataPattern targetPackage
+styleable ActivityNavigator android_name action data dataPattern
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
@@ -2295,9 +2319,7 @@ styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable CustomAttribute attributeName customBoolean customColorDrawableValue customColorValue customDimension customFloatValue customIntegerValue customPixelDimension customStringValue
 styleable DesignTheme bottomSheetDialogTheme bottomSheetStyle
-styleable DialogFragmentNavigator android_name
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
-styleable DrawerLayout elevation
 styleable FloatingActionButton backgroundTint backgroundTintMode borderWidth elevation fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
 styleable FlowLayout itemSpacing lineSpacing
@@ -2336,10 +2358,9 @@ styleable MotionScene defaultDuration layoutDuringTransition
 styleable MotionTelltales telltales_tailColor telltales_tailScale telltales_velocityMode
 styleable NavAction android_id destination enterAnim exitAnim launchSingleTop popEnterAnim popExitAnim popUpTo popUpToInclusive
 styleable NavArgument android_name android_defaultValue argType nullable
-styleable NavDeepLink android_autoVerify action mimeType uri
+styleable NavDeepLink android_autoVerify uri
 styleable NavGraphNavigator startDestination
-styleable NavHost navGraph
-styleable NavHostFragment defaultNavHost
+styleable NavHostFragment defaultNavHost navGraph
 styleable NavInclude graph
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconTint itemTextAppearance itemTextColor menu
 styleable Navigator android_label android_id
@@ -2368,7 +2389,7 @@ styleable TextInputLayout android_textColorHint android_hint boxBackgroundColor 
 styleable ThemeEnforcement android_textAppearance enforceMaterialTheme enforceTextAppearance
 styleable Toolbar android_gravity android_minHeight buttonGravity collapseContentDescription collapseIcon contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation logo logoDescription maxButtonHeight menu navigationContentDescription navigationIcon popupTheme subtitle subtitleTextAppearance subtitleTextColor title titleMargin titleMarginBottom titleMarginEnd titleMarginStart titleMarginTop titleMargins titleTextAppearance titleTextColor
 styleable Transform android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation
-styleable Transition android_id autoTransition constraintSetEnd constraintSetStart duration layoutDuringTransition motionInterpolator pathMotionArc staggered transitionDisable transitionFlags
+styleable Transition android_id autoTransition constraintSetEnd constraintSetStart duration layoutDuringTransition motionInterpolator pathMotionArc staggered transitionDisable
 styleable Variant constraints region_heightLessThan region_heightMoreThan region_widthLessThan region_widthMoreThan
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode

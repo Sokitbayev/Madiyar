@@ -61,9 +61,7 @@
         <enum name="rectangles" value="5"/>
     </attr>
     <attr format="reference" name="drawerArrowStyle"/>
-    <attr format="reference" name="drawerLayoutStyle"/>
     <attr format="integer" name="duration"/>
-    <attr format="dimension" name="elevation"/>
     <attr name="floatingActionButtonStyle"/>
     <attr format="float" name="flow_firstHorizontalBias"/>
     <attr format="enum" name="flow_firstHorizontalStyle">
@@ -77,7 +75,7 @@
         <enum name="spread_inside" value="1"/>
         <enum name="packed" value="2"/>
     </attr>
-    <attr format="enum" name="flow_horizontalAlign">
+    <attr format="float" name="flow_horizontalAlign">
         <enum name="start" value="0"/>
         <enum name="end" value="1"/>
         <enum name="center" value="2"/>
@@ -232,7 +230,7 @@
     <attr format="dimension" name="layout_goneMarginTop"/>
     <attr name="layout_optimizationLevel">
         <flag name="none" value="0"/>
-        <flag name="standard" value="257"/> <!-- direct, measure caches -->
+        <flag name="standard" value="7"/> <!-- direct, barriers, chains -->
         <flag name="direct" value="1"/>
         <flag name="barrier" value="2"/>
         <flag name="chains" value="4"/>
@@ -241,9 +239,6 @@
         <flag name="groups" value="32"/>
         <flag name="graph" value="64"/>
         <flag name="graph_wrap" value="128"/>
-        <flag name="cache_measures" value="256"/>
-        <flag name="dependency_ordering" value="512"/>
-        <flag name="grouping" value="1024"/>
     </attr>
     <attr format="reference" name="materialButtonStyle"/>
     <attr format="reference" name="materialCardViewStyle"/>
@@ -512,7 +507,6 @@
     <dimen name="compat_control_corner_material">2dp</dimen>
     <dimen name="compat_notification_large_icon_max_height">320dp</dimen>
     <dimen name="compat_notification_large_icon_max_width">320dp</dimen>
-    <dimen name="def_drawer_elevation">10dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>
     <dimen name="design_bottom_navigation_active_item_min_width">96dp</dimen>
@@ -686,9 +680,9 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <item name="dataBinding" type="id"/>
     <item name="fragment_container_view_tag" type="id"/>
     <item name="ghost_view" type="id"/>
-    <item name="ghost_view_holder" type="id"/>
     <item name="home" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="line1" type="id"/>
@@ -697,12 +691,14 @@
     <item name="mtrl_child_content_container" type="id"/>
     <item name="mtrl_internal_children_alpha_tag" type="id"/>
     <item name="nav_controller_view_tag" type="id"/>
-    <item name="nav_host_fragment_container" type="id"/>
+    <item name="onAttachStateChangeListener" type="id"/>
+    <item name="onDateChanged" type="id"/>
     <item name="parent_matrix" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
+    <item name="save_image_matrix" type="id"/>
     <item name="save_non_transition_alpha" type="id"/>
-    <item name="save_overlay_view" type="id"/>
+    <item name="save_scale_type" type="id"/>
     <item name="snackbar_action" type="id"/>
     <item name="snackbar_text" type="id"/>
     <item name="split_action_bar" type="id"/>
@@ -716,6 +712,7 @@
     <item name="tag_unhandled_key_listeners" type="id"/>
     <item name="text" type="id"/>
     <item name="text2" type="id"/>
+    <item name="textWatcher" type="id"/>
     <item name="textinput_counter" type="id"/>
     <item name="textinput_error" type="id"/>
     <item name="textinput_helper_text" type="id"/>
@@ -733,7 +730,6 @@
     <integer name="app_bar_elevation_anim_duration">150</integer>
     <integer name="bottom_sheet_slide_duration">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
-    <integer name="config_navAnimTime">150</integer>
     <integer name="config_tooltipAnimTime">150</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="design_tab_indicator_anim_duration_ms">300</integer>
@@ -784,6 +780,7 @@
     <string name="forgot_password">Забыли пароль?</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="image_description">Не удалось загрузить</string>
     <string name="lets_begin_registration">Давайте начнем процесс регистрации с вашего города, чтобы загрузить карту</string>
     <string name="logo_temp">Logo Temp</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
@@ -797,14 +794,18 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="register">Зарегистрироваться</string>
     <string name="search_menu_title">Search</string>
     <string name="send_code">Отправить</string>
     <string name="send_code_again">Отправить еще раз</string>
     <string name="slogan_big">Заказывайте продукты прямо со двора</string>
     <string name="slogan_small">Подключайся и будь на связи.</string>
     <string name="sms_code">Код из смс</string>
+    <string name="sms_confirm">Мы отправим вам смс с кодом подтверждения</string>
+    <string name="specify_address">Укажите адрес</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="tv_new_password_info">Введите новый пароль. Вы сразу авторизуетесь в приложении.</string>
+    <string name="usage_condition">Нажимая Зарегистрироваться, я принимаю Условия использования и мною прочитана политика конфиденциальности.</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -3309,7 +3310,6 @@
         <attr format="string" name="action"/>
         <attr format="string" name="data"/>
         <attr format="string" name="dataPattern"/>
-        <attr format="string" name="targetPackage"/>
     </declare-styleable>
     <declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
@@ -4171,9 +4171,6 @@
     </declare-styleable>
     <declare-styleable name="CustomAttribute"><attr format="string" name="attributeName"/><attr format="color" name="customColorValue"/><attr format="color" name="customColorDrawableValue"/><attr format="integer" name="customIntegerValue"/><attr format="float" name="customFloatValue"/><attr format="string" name="customStringValue"/><attr format="dimension" name="customDimension"/><attr format="dimension" name="customPixelDimension"/><attr format="boolean" name="customBoolean"/></declare-styleable>
     <declare-styleable name="DesignTheme"><attr name="bottomSheetDialogTheme"/><attr name="bottomSheetStyle"/></declare-styleable>
-    <declare-styleable name="DialogFragmentNavigator">
-        <attr name="android:name"/>
-    </declare-styleable>
     <declare-styleable name="DrawerArrowToggle">
         <!-- The drawing color for the bars -->
         <attr format="color" name="color"/>
@@ -4191,10 +4188,6 @@
         <attr format="dimension" name="barLength"/>
         <!-- The thickness (stroke size) for the bar paint -->
         <attr format="dimension" name="thickness"/>
-    </declare-styleable>
-    <declare-styleable name="DrawerLayout">
-        <!-- The height difference between the drawer and the base surface. Only takes effect on API 21 and above -->
-        <attr name="elevation"/>
     </declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr name="rippleColor"/><attr name="fabSize">
       
@@ -4627,17 +4620,13 @@
     </declare-styleable>
     <declare-styleable name="NavDeepLink">
         <attr format="string" name="uri"/>
-        <attr format="string" name="action"/>
-        <attr format="string" name="mimeType"/>
         <attr name="android:autoVerify"/>
     </declare-styleable>
     <declare-styleable name="NavGraphNavigator">
         <attr format="reference" name="startDestination"/>
     </declare-styleable>
-    <declare-styleable name="NavHost">
-        <attr format="reference" name="navGraph"/>
-    </declare-styleable>
     <declare-styleable name="NavHostFragment">
+        <attr format="reference" name="navGraph"/>
         <attr format="boolean" name="defaultNavHost"/>
     </declare-styleable>
     <declare-styleable name="NavInclude">
@@ -5015,11 +5004,7 @@
             <enum name="easeOut" value="2"/>
             <enum name="linear" value="3"/>
             <enum name="bounce" value="5"/>
-        </attr><attr name="duration"/><attr format="float" name="staggered"/><attr name="transitionFlags">
-            <flag name="none" value="0"/>
-            <flag name="beginOnFirstDraw" value="1"/>
-            />
-        </attr></declare-styleable>
+        </attr><attr name="duration"/><attr format="float" name="staggered"/></declare-styleable>
     <declare-styleable name="Variant"><attr format="dimension" name="region_widthLessThan"/><attr format="dimension" name="region_widthMoreThan"/><attr format="dimension" name="region_heightLessThan"/><attr format="dimension" name="region_heightMoreThan"/><attr name="constraints"/></declare-styleable>
     <declare-styleable name="View">
         <!-- Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. -->

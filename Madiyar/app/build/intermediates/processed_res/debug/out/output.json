@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.example.madiyar",
+  "applicationId": "com.example.android.trackmysleepquality",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -19,7 +19,7 @@
       },
       "path": "resources-debug.ap_",
       "properties": {
-        "packageId": "com.example.madiyar",
+        "packageId": "com.example.android.trackmysleepquality",
         "split": "",
         "minSdkVersion": "19"
       }

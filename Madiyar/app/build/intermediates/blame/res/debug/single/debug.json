@@ -68,16 +68,16 @@
         "source": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\src\\main\\res\\drawable\\city.png"
     },
     {
-        "merged": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shop.png.flat",
         "source": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\src\\main\\res\\drawable\\shop.png"
+    },
+    {
+        "merged": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "972242498011",
+    "firebase_url": "https://madiyar-ad439.firebaseio.com",
+    "project_id": "madiyar-ad439",
+    "storage_bucket": "madiyar-ad439.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972242498011:android:8288f8ea756874406b77fe",
+        "android_client_info": {
+          "package_name": "com.example.madiyar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972242498011-ajt7olovh9q3b96vo3ajp1b852prlikt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARcMgIsETVj2chaJPxmuSAWafiZQoI89M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972242498011-ajt7olovh9q3b96vo3ajp1b852prlikt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

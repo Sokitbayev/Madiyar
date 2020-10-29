@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Msoki\\.gradle\\caches\\transforms-2\\files-2.1\\a95a18f83cda79d2d0d4c4e10131a9d0\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Msoki\\.gradle\\caches\\transforms-2\\files-2.1\\241d0a9b96ee5c6eb63c1a3295241736\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Msoki\\.gradle\\caches\\transforms-2\\files-2.1\\8d26121c13735152464d1766c9845e2d\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Msoki\\.gradle\\caches\\transforms-2\\files-2.1\\b0331707f5debbe30b9f424b977bcf42\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -25,11 +25,17 @@
                 card_view:layout_constraintEnd_toEndOf="parent"
                 card_view:layout_constraintStart_toStartOf="parent"
                 android:hint="@string/home_address"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
                 card_view:layout_constraintTop_toBottomOf="@+id/tv_specify_address" />
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_apartment_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
                 card_view:layout_constraintEnd_toEndOf="parent"
                 card_view:layout_constraintStart_toStartOf="parent"
                 android:hint="@string/apartment_number"
@@ -41,6 +47,9 @@
                 card_view:layout_constraintEnd_toEndOf="parent"
                 card_view:layout_constraintStart_toStartOf="parent"
                 android:hint="@string/additional_description"
+                android:inputType="text"
+                android:maxLines="3"
+                android:singleLine="true"
                 card_view:layout_constraintTop_toBottomOf="@+id/et_apartment_number" />
             <Button
                 android:id="@+id/btn_next"

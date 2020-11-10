@@ -1440,12 +1440,12 @@ id entranceFragment
 id entrance_layout
 id et_additional_description
 id et_apartment_number
+id et_email
 id et_home_address
 id et_name
 id et_new_password
 id et_new_password_confirm
 id et_password
-id et_phone_number
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1621,8 +1621,8 @@ id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id til_email
 id til_password
-id til_phone_number
 id time
 id title
 id titleDividerNoCustom
@@ -1869,6 +1869,7 @@ string specify_address
 string status_bar_notification_info_overflow
 string tv_new_password_info
 string usage_condition
+string your_email
 string your_name
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

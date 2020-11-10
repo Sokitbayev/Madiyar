@@ -38,12 +38,16 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/til_phone_number"
+            android:id="@+id/til_email"
             app:layout_constraintTop_toBottomOf="@+id/iv_logo">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/phone_number">
+                android:hint="@string/your_email"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true">
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,11 +55,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/til_password"
-            app:layout_constraintTop_toBottomOf="@+id/til_phone_number">
+            app:layout_constraintTop_toBottomOf="@+id/til_email">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password">
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true">
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 

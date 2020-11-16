@@ -37,4 +37,5 @@
     <string name="repeat_password">Повторите пароль</string>
     <string name="shop_image">SHOP IMAGE</string>
     <string name="your_email">Ваша почта</string>
+    <string name="change_password">Изменить пароль</string>
 </resources>

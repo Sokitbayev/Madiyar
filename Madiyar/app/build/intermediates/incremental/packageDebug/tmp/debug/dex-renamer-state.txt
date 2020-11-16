@@ -1,4 +1,4 @@
-#Tue Nov 10 08:21:00 ALMT 2020
-base.0=C\:\\Users\\Msoki\\Documents\\GitHub\\Madiyar\\Madiyar\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Tue Nov 17 03:46:38 ALMT 2020
+base.0=C\:\\Users\\Sokitbayev\\StudioProjects\\Madiyar\\Madiyar\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

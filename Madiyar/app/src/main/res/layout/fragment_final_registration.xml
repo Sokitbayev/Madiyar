@@ -78,10 +78,14 @@
 
         <Button
             android:id="@+id/btn_register"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:text="@string/register"
+            android:background="@drawable/button_blue_bg"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"

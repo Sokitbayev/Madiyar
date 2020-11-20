@@ -8,38 +8,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".registrationandauth.CityFragment">
-        <TextView
-            android:id="@+id/tv_logo_temp"
-            android:layout_width="213dp"
-            android:layout_height="44dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="16dp"
-            android:gravity="top"
-            android:text="@string/logo_temp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_enter_city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
             android:text="@string/enter_city"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="24sp"
+            android:textColor="#1D1D1B"
+            android:layout_marginTop="50dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_logo_temp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_lets_begin_registration"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="35dp"
             android:text="@string/lets_begin_registration"
+            android:textColor="#1D1D1B"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_enter_city" />
 
@@ -51,14 +45,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_lets_begin_registration"
             app:srcCompat="@drawable/city"
+            android:layout_marginTop="39dp"
             android:contentDescription="@string/image_description"/>
 
         <Spinner
             android:id="@+id/spinner_cities"
-            android:layout_width="409dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="53dp"
             android:entries="@array/cities"
+            android:autofillHints="Ваш город"
+            android:layout_marginHorizontal="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/iv_city" />
@@ -67,15 +64,15 @@
             android:id="@+id/btn_next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/next"
+            android:layout_marginHorizontal="16dp"
             android:background="@drawable/button_blue_bg"
             android:fontFamily="@font/montserrat_bold"
+            android:text="@string/next"
             android:textColor="@android:color/white"
-            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="34dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinner_cities" />
+            app:layout_constraintStart_toStartOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

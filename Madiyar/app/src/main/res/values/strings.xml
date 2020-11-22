@@ -32,7 +32,7 @@
     <string name="password">Пароль</string>
     <string name="home_address">Домашний адрес</string>
     <string name="apartment_number">Номер квартиры</string>
-    <string name="additional_description">Дополнительное описание. Как проще до вас добраться?</string>
+    <string name="additional_description">Дополнительное описание</string>
     <string name="your_name">Ваше имя</string>
     <string name="repeat_password">Повторите пароль</string>
     <string name="shop_image">SHOP IMAGE</string>

@@ -39,8 +39,8 @@
 23        android:supportsRtl="true"
 23-->C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:10:9-35
 24        android:testOnly="true"
-25        android:theme="@style/AppTheme" >
-25-->C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:11:9-40
+25        android:theme="@style/Theme.Design.Light.NoActionBar" >
+25-->C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:11:9-62
 26        <activity android:name="com.example.madiyar.MainActivity" >
 26-->C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:12:9-18:20
 26-->C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:12:19-47

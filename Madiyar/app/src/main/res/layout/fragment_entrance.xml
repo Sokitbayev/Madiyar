@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:fontFamily="@font/montserrat_regular"
-                android:inputType="textVisiblePassword"
+                android:inputType="textPassword"
                 android:maxLines="1"
                 android:singleLine="true"/>
         </com.google.android.material.textfield.TextInputLayout>

@@ -1,5 +1,6 @@
 package com.example.madiyar.registrationandauth
 
+import android.graphics.Typeface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -24,9 +25,10 @@ class EntranceFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         val binding = DataBindingUtil.inflate<FragmentEntranceBinding>(inflater,R.layout.fragment_entrance,container,false)
+        binding.tilPassword.typeface = Typeface.createFromAsset(context?.assets, "fonts/montserrat_regular.ttf")
         binding.tvForgotPassword.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_entranceFragment_to_forgotPasswordFragment)
         }

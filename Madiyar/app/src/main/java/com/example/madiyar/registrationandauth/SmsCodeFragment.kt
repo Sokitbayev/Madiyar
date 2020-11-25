@@ -16,7 +16,7 @@ class SmsCodeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = DataBindingUtil.inflate<FragmentSmsCodeBinding>(inflater,R.layout.fragment_sms_code,container,false)
         binding.btnConfirmCode.setOnClickListener {
             it.findNavController().navigate(R.id.action_smsCodeFragment_to_newPasswordFragment)

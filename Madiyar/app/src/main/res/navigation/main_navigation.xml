@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_entranceFragment_to_forgotPasswordFragment"
             app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_entranceFragment_to_userMainPageFragment2"
+            app:destination="@id/userMainPageFragment2" />
     </fragment>
     <fragment
         android:id="@+id/forgotPasswordFragment"
@@ -72,4 +75,8 @@
         android:name="com.example.madiyar.registrationandauth.FinalRegistrationFragment"
         android:label="fragment_final_registration"
         tools:layout="@layout/fragment_final_registration" />
+    <activity
+        android:id="@+id/userMainPageFragment2"
+        android:name="com.example.madiyar.usermain.UserMainPageFragment"
+        android:label="UserMainPageFragment" />
 </navigation>

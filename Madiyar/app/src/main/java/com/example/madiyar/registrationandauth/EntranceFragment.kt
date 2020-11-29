@@ -32,8 +32,9 @@ class EntranceFragment : Fragment() {
         binding.tvForgotPassword.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_entranceFragment_to_forgotPasswordFragment)
         }
-        binding.btnEnter.setOnClickListener {
-            signIn(binding.etEmail.text.toString(),binding.etPassword.text.toString())
+        binding.btnEnter.setOnClickListener {view: View ->
+            view.findNavController().navigate(R.id.action_entranceFragment_to_userMainPageFragment2)
+            //signIn(binding.etEmail.text.toString(),binding.etPassword.text.toString())
         }
         return binding.root
     }
@@ -43,8 +44,7 @@ class EntranceFragment : Fragment() {
             auth.signInWithEmailAndPassword(email,password)
             .addOnCompleteListener {
                 if (it.isSuccessful) {
-                    Toast.makeText(context, "Success", Toast.LENGTH_LONG).show()
-                    return@addOnCompleteListener
+                    view?.findNavController()?.navigate(R.id.action_entranceFragment_to_userMainPageFragment2)
                 }
                 Toast.makeText(context, it.exception?.message, Toast.LENGTH_LONG).show()
             }

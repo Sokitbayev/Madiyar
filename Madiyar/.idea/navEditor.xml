@@ -61,7 +61,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_entranceFragment2_to_forgotPasswordFragment">
+                            <entry key="action_entranceFragment_to_forgotPasswordFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -153,12 +153,24 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_startFragment_to_entranceFragment2">
+                            <entry key="action_startFragment_to_entranceFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
                           </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="userMainPageFragment2">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="343" />
+                            <option name="y" value="-406" />
+                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>

@@ -17,16 +17,20 @@ public class FragmentProfileBindingImpl extends FragmentProfileBinding  {
         sViewsWithIds.put(R.id.textView2, 1);
         sViewsWithIds.put(R.id.textView3, 2);
         sViewsWithIds.put(R.id.horizontalScrollView, 3);
-        sViewsWithIds.put(R.id.textView4, 4);
-        sViewsWithIds.put(R.id.textView5, 5);
-        sViewsWithIds.put(R.id.textView6, 6);
-        sViewsWithIds.put(R.id.textView7, 7);
-        sViewsWithIds.put(R.id.textView8, 8);
-        sViewsWithIds.put(R.id.textView9, 9);
-        sViewsWithIds.put(R.id.textView10, 10);
-        sViewsWithIds.put(R.id.textView11, 11);
-        sViewsWithIds.put(R.id.textView12, 12);
-        sViewsWithIds.put(R.id.textView13, 13);
+        sViewsWithIds.put(R.id.imageView3, 4);
+        sViewsWithIds.put(R.id.textView17, 5);
+        sViewsWithIds.put(R.id.textView21, 6);
+        sViewsWithIds.put(R.id.textView22, 7);
+        sViewsWithIds.put(R.id.textView4, 8);
+        sViewsWithIds.put(R.id.textView5, 9);
+        sViewsWithIds.put(R.id.textView6, 10);
+        sViewsWithIds.put(R.id.textView7, 11);
+        sViewsWithIds.put(R.id.textView8, 12);
+        sViewsWithIds.put(R.id.textView9, 13);
+        sViewsWithIds.put(R.id.textView10, 14);
+        sViewsWithIds.put(R.id.textView11, 15);
+        sViewsWithIds.put(R.id.textView12, 16);
+        sViewsWithIds.put(R.id.textView13, 17);
     }
     // views
     @NonNull
@@ -37,23 +41,27 @@ public class FragmentProfileBindingImpl extends FragmentProfileBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentProfileBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 18, sIncludes, sViewsWithIds));
     }
     private FragmentProfileBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.HorizontalScrollView) bindings[3]
+            , (android.widget.ImageView) bindings[4]
+            , (android.widget.TextView) bindings[14]
+            , (android.widget.TextView) bindings[15]
+            , (android.widget.TextView) bindings[16]
+            , (android.widget.TextView) bindings[17]
+            , (android.widget.TextView) bindings[5]
+            , (android.widget.TextView) bindings[1]
+            , (android.widget.TextView) bindings[6]
+            , (android.widget.TextView) bindings[7]
+            , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[8]
+            , (android.widget.TextView) bindings[9]
             , (android.widget.TextView) bindings[10]
             , (android.widget.TextView) bindings[11]
             , (android.widget.TextView) bindings[12]
             , (android.widget.TextView) bindings[13]
-            , (android.widget.TextView) bindings[1]
-            , (android.widget.TextView) bindings[2]
-            , (android.widget.TextView) bindings[4]
-            , (android.widget.TextView) bindings[5]
-            , (android.widget.TextView) bindings[6]
-            , (android.widget.TextView) bindings[7]
-            , (android.widget.TextView) bindings[8]
-            , (android.widget.TextView) bindings[9]
             );
         this.mboundView0 = (androidx.core.widget.NestedScrollView) bindings[0];
         this.mboundView0.setTag(null);

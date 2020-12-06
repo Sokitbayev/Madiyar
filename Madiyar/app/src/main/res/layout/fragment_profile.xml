@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     tools:context=".usermain.ProfileFragment">
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -9,7 +10,8 @@
         android:fillViewport="true">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
 
             <TextView
                 android:id="@+id/textView2"
@@ -41,9 +43,8 @@
 
             <HorizontalScrollView
                 android:id="@+id/horizontalScrollView"
-                android:layout_width="402dp"
+                android:layout_width="match_parent"
                 android:layout_height="318dp"
-                android:layout_marginStart="20dp"
                 android:layout_marginTop="13dp"
                 android:background="@drawable/corner_radius"
                 android:orientation="vertical"
@@ -53,18 +54,85 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_rectange_orange" />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@drawable/card_bg">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_rectange_orange" />
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/ic_baseline_delete_24"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints"
+                            app:tint="@color/cardview_dark_background" />
 
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginStart="12dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Ruslan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="•••• 7321"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/card_empty_bg"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="11dp"
+                            android:layout_marginTop="76dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Добавить карту"
+                            android:textColor="#1D1D1B"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="47dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/ic_baseline_add_24"
+                            android:layout_marginRight="14dp"
+                            android:layout_marginBottom="14dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:tint="@color/cardview_dark_background" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
             </HorizontalScrollView>
@@ -138,12 +206,14 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Дом перед аптекой “Здоров как бык”, тертий подъезд."
-                android:textSize="14sp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:textColor="#1D1D1B"
                 android:layout_marginHorizontal="16dp"
+                android:paddingHorizontal="16dp"
                 android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Дом перед аптекой “Здоров как бык”, третий подъезд."
+                android:textColor="#1D1D1B"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 

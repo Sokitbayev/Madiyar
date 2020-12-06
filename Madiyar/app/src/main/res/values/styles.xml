@@ -8,9 +8,30 @@
         <item name="android:textColor">#1D1D1B</item>
         <item name="android:fontFamily">@font/montserrat_regular</item>
     </style>
-    <style name="TabTheme" parent="AppTheme">
+    <style name="TabTheme" >
         <item name="android:textColor">#1D1D1B</item>
         <item name="android:fontFamily">@font/montserrat_regular</item>
         <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+
+    </style>
+
+    <!-- for text -->
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="color">#929292</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="BackgroundCustomTheme" parent="@android:style/Theme.Light">
+        <item name="backgroundColor">#FFFFFF</item>
     </style>
 </resources>

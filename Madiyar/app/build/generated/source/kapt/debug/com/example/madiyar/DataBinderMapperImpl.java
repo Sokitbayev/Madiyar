@@ -10,9 +10,11 @@ import com.example.madiyar.databinding.ActivityMainBindingImpl;
 import com.example.madiyar.databinding.FragmentAddressBindingImpl;
 import com.example.madiyar.databinding.FragmentCityBindingImpl;
 import com.example.madiyar.databinding.FragmentEntranceBindingImpl;
+import com.example.madiyar.databinding.FragmentFavouriteBindingImpl;
 import com.example.madiyar.databinding.FragmentFinalRegistrationBindingImpl;
 import com.example.madiyar.databinding.FragmentForgotPasswordBindingImpl;
 import com.example.madiyar.databinding.FragmentNewPasswordBindingImpl;
+import com.example.madiyar.databinding.FragmentOrderHistoryBindingImpl;
 import com.example.madiyar.databinding.FragmentProfileBindingImpl;
 import com.example.madiyar.databinding.FragmentSmsCodeBindingImpl;
 import com.example.madiyar.databinding.FragmentStartBindingImpl;
@@ -36,30 +38,36 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTENTRANCE = 4;
 
-  private static final int LAYOUT_FRAGMENTFINALREGISTRATION = 5;
+  private static final int LAYOUT_FRAGMENTFAVOURITE = 5;
 
-  private static final int LAYOUT_FRAGMENTFORGOTPASSWORD = 6;
+  private static final int LAYOUT_FRAGMENTFINALREGISTRATION = 6;
 
-  private static final int LAYOUT_FRAGMENTNEWPASSWORD = 7;
+  private static final int LAYOUT_FRAGMENTFORGOTPASSWORD = 7;
 
-  private static final int LAYOUT_FRAGMENTPROFILE = 8;
+  private static final int LAYOUT_FRAGMENTNEWPASSWORD = 8;
 
-  private static final int LAYOUT_FRAGMENTSMSCODE = 9;
+  private static final int LAYOUT_FRAGMENTORDERHISTORY = 9;
 
-  private static final int LAYOUT_FRAGMENTSTART = 10;
+  private static final int LAYOUT_FRAGMENTPROFILE = 10;
 
-  private static final int LAYOUT_FRAGMENTUSERMAINPAGE = 11;
+  private static final int LAYOUT_FRAGMENTSMSCODE = 11;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(11);
+  private static final int LAYOUT_FRAGMENTSTART = 12;
+
+  private static final int LAYOUT_FRAGMENTUSERMAINPAGE = 13;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(13);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_address, LAYOUT_FRAGMENTADDRESS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_city, LAYOUT_FRAGMENTCITY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_entrance, LAYOUT_FRAGMENTENTRANCE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_favourite, LAYOUT_FRAGMENTFAVOURITE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_final_registration, LAYOUT_FRAGMENTFINALREGISTRATION);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_forgot_password, LAYOUT_FRAGMENTFORGOTPASSWORD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_new_password, LAYOUT_FRAGMENTNEWPASSWORD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_order_history, LAYOUT_FRAGMENTORDERHISTORY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_profile, LAYOUT_FRAGMENTPROFILE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_sms_code, LAYOUT_FRAGMENTSMSCODE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.madiyar.R.layout.fragment_start, LAYOUT_FRAGMENTSTART);
@@ -99,6 +107,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for fragment_entrance is invalid. Received: " + tag);
         }
+        case  LAYOUT_FRAGMENTFAVOURITE: {
+          if ("layout/fragment_favourite_0".equals(tag)) {
+            return new FragmentFavouriteBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_favourite is invalid. Received: " + tag);
+        }
         case  LAYOUT_FRAGMENTFINALREGISTRATION: {
           if ("layout/fragment_final_registration_0".equals(tag)) {
             return new FragmentFinalRegistrationBindingImpl(component, view);
@@ -116,6 +130,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new FragmentNewPasswordBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for fragment_new_password is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTORDERHISTORY: {
+          if ("layout/fragment_order_history_0".equals(tag)) {
+            return new FragmentOrderHistoryBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_order_history is invalid. Received: " + tag);
         }
         case  LAYOUT_FRAGMENTPROFILE: {
           if ("layout/fragment_profile_0".equals(tag)) {
@@ -195,16 +215,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(11);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(13);
 
     static {
       sKeys.put("layout/activity_main_0", com.example.madiyar.R.layout.activity_main);
       sKeys.put("layout/fragment_address_0", com.example.madiyar.R.layout.fragment_address);
       sKeys.put("layout/fragment_city_0", com.example.madiyar.R.layout.fragment_city);
       sKeys.put("layout/fragment_entrance_0", com.example.madiyar.R.layout.fragment_entrance);
+      sKeys.put("layout/fragment_favourite_0", com.example.madiyar.R.layout.fragment_favourite);
       sKeys.put("layout/fragment_final_registration_0", com.example.madiyar.R.layout.fragment_final_registration);
       sKeys.put("layout/fragment_forgot_password_0", com.example.madiyar.R.layout.fragment_forgot_password);
       sKeys.put("layout/fragment_new_password_0", com.example.madiyar.R.layout.fragment_new_password);
+      sKeys.put("layout/fragment_order_history_0", com.example.madiyar.R.layout.fragment_order_history);
       sKeys.put("layout/fragment_profile_0", com.example.madiyar.R.layout.fragment_profile);
       sKeys.put("layout/fragment_sms_code_0", com.example.madiyar.R.layout.fragment_sms_code);
       sKeys.put("layout/fragment_start_0", com.example.madiyar.R.layout.fragment_start);

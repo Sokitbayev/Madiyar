@@ -9,19 +9,23 @@
     android:background="@drawable/corner_radius_bottom_sheet_main"
     app:behavior_hideable="false"
     app:behavior_peekHeight="250dp"
+
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
     tools:context="usermain.UserMainPageFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
+            android:background="#FFFFFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TabTheme"
             app:tabMode="fixed"
+            style="@style/AppTabLayout"
+            app:tabTextAppearance="@style/AppTabTextAppearance"
             app:tabGravity="fill"/>
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -30,7 +34,7 @@
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        style="@style/TabTheme"
+        android:background="#FFFFFF"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
 

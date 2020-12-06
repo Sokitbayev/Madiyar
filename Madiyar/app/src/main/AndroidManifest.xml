@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".usermain.UserMainPageFragment"></activity>
-        <activity android:name=".delete.TabLayoutDemoActivity" />
+        <activity android:name=".usermain.UserMainPageFragment" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

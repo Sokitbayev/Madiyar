@@ -1,12 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.databinding:databinding-adapters:4.1.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\5faaf27f596d7573211328665e05d70f\databinding-adapters-4.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.1.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\890b14401c01e80fb5c9e34d8706539b\databinding-runtime-4.1.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\2eb0d067cf4890336a4f4768282b2d65\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\0cd0c0efb8741f4836899fa49d91f414\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-auth-ktx:20.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\fc1f9fdd513b782bb91008c03be94adb\jetified-firebase-auth-ktx-20.0.0\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-common-ktx:19.3.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\1cece272f80aca198b33661cba4660af\jetified-firebase-common-ktx-19.3.1\AndroidManifest.xml:2:1-21:12
@@ -52,6 +51,7 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Sokitbayev\.
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\70e1aa122abc8bad06cbff5becc907e3\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\2f1e8ca5a3585e93f4dd628a0ba0cc24\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\9820807ed2635b2b265877d77d7c50f6\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\2eb0d067cf4890336a4f4768282b2d65\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:viewbinding:4.1.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\77e87f3e22633d8f0ebcddb163d8e7f0\jetified-viewbinding-4.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.3.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\77fd050be44facf83308cdbfe8758cd9\navigation-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\7e4c87ab288b89c7d761f7910f34e279\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -92,25 +92,25 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\7724dd6a7180e0e8e43405703d37b574\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\2735cbe6b2bbc8d06201dc563c9c1f09\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\9812aecc57bc7e098879e32a654db682\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:5:5-25:19
+ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:5:5-24:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\0cd0c0efb8741f4836899fa49d91f414\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\0cd0c0efb8741f4836899fa49d91f414\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:20.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\fc1f9fdd513b782bb91008c03be94adb\jetified-firebase-auth-ktx-20.0.0\AndroidManifest.xml:7:5-15:19
@@ -180,33 +180,29 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\So
 	android:theme
 		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:11:9-62
 activity#com.example.madiyar.usermain.UserMainPageFragment
-ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:12:9-76
+ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:12:9-67
 	android:name
 		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:12:19-64
-activity#com.example.madiyar.delete.TabLayoutDemoActivity
-ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:13:9-66
-	android:name
-		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:13:19-63
 activity#com.example.madiyar.MainActivity
-ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:14:19-47
+		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:13:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:17:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:22:9-24:57
+ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:21:9-23:57
 	android:resource
-		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:24:13-54
+		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:23:13-54
 	android:name
-		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:23:13-43
+		ADDED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml:22:13-43
 uses-sdk
 INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Sokitbayev\StudioProjects\Madiyar\Madiyar\app\src\main\AndroidManifest.xml
@@ -215,8 +211,6 @@ MERGED from [androidx.databinding:databinding-adapters:4.1.1] C:\Users\Sokitbaye
 MERGED from [androidx.databinding:databinding-adapters:4.1.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\5faaf27f596d7573211328665e05d70f\databinding-adapters-4.1.1\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-runtime:4.1.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\890b14401c01e80fb5c9e34d8706539b\databinding-runtime-4.1.1\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-runtime:4.1.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\890b14401c01e80fb5c9e34d8706539b\databinding-runtime-4.1.1\AndroidManifest.xml:22:5-44
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\2eb0d067cf4890336a4f4768282b2d65\multidex-2.0.0\AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\2eb0d067cf4890336a4f4768282b2d65\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\0cd0c0efb8741f4836899fa49d91f414\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\0cd0c0efb8741f4836899fa49d91f414\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-ktx:20.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\fc1f9fdd513b782bb91008c03be94adb\jetified-firebase-auth-ktx-20.0.0\AndroidManifest.xml:5:5-44
@@ -307,6 +301,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\Sokitbay
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\2f1e8ca5a3585e93f4dd628a0ba0cc24\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\9820807ed2635b2b265877d77d7c50f6\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\9820807ed2635b2b265877d77d7c50f6\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\2eb0d067cf4890336a4f4768282b2d65\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\2eb0d067cf4890336a4f4768282b2d65\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.databinding:viewbinding:4.1.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\77e87f3e22633d8f0ebcddb163d8e7f0\jetified-viewbinding-4.1.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:4.1.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\77e87f3e22633d8f0ebcddb163d8e7f0\jetified-viewbinding-4.1.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-runtime:2.3.1] C:\Users\Sokitbayev\.gradle\caches\transforms-2\files-2.1\77fd050be44facf83308cdbfe8758cd9\navigation-runtime-2.3.1\AndroidManifest.xml:20:5-22:41

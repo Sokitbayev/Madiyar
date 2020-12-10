@@ -21,7 +21,7 @@ public class FragmentOrderHistoryBindingImpl extends FragmentOrderHistoryBinding
         sViewsWithIds.put(R.id.textView26, 5);
         sViewsWithIds.put(R.id.textView27, 6);
         sViewsWithIds.put(R.id.textView28, 7);
-        sViewsWithIds.put(R.id.button, 8);
+        sViewsWithIds.put(R.id.btn_detailed, 8);
         sViewsWithIds.put(R.id.imageView4, 9);
         sViewsWithIds.put(R.id.textView30, 10);
         sViewsWithIds.put(R.id.textView31, 11);
@@ -30,7 +30,7 @@ public class FragmentOrderHistoryBindingImpl extends FragmentOrderHistoryBinding
         sViewsWithIds.put(R.id.textView34, 14);
         sViewsWithIds.put(R.id.textView35, 15);
         sViewsWithIds.put(R.id.textView36, 16);
-        sViewsWithIds.put(R.id.button1, 17);
+        sViewsWithIds.put(R.id.btn_detailed2, 17);
         sViewsWithIds.put(R.id.imageView5, 18);
     }
     // views

@@ -73,7 +73,6 @@
                             android:src="@drawable/ic_baseline_delete_24"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="MissingConstraints"
                             app:tint="@color/cardview_dark_background" />
 
                         <TextView

@@ -13,7 +13,12 @@ public class FragmentUserMainPageBindingImpl extends FragmentUserMainPageBinding
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.imageView8, 1);
+        sViewsWithIds.put(R.id.imageView9, 2);
+        sViewsWithIds.put(R.id.appBarLayout, 3);
+        sViewsWithIds.put(R.id.tab_layout, 4);
+        sViewsWithIds.put(R.id.pager, 5);
     }
     // views
     // variables
@@ -22,10 +27,15 @@ public class FragmentUserMainPageBindingImpl extends FragmentUserMainPageBinding
     // Inverse Binding Event Handlers
 
     public FragmentUserMainPageBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 1, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private FragmentUserMainPageBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (com.google.android.material.appbar.AppBarLayout) bindings[3]
+            , (android.widget.ImageView) bindings[1]
+            , (android.widget.ImageView) bindings[2]
+            , (androidx.viewpager.widget.ViewPager) bindings[5]
+            , (com.google.android.material.tabs.TabLayout) bindings[4]
             , (androidx.coordinatorlayout.widget.CoordinatorLayout) bindings[0]
             );
         this.userMainPageFragment.setTag(null);

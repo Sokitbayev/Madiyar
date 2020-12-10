@@ -16,7 +16,7 @@ class AddressFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = DataBindingUtil.inflate<FragmentAddressBinding>(inflater,
             R.layout.fragment_address,container,false)
         binding.btnNext.setOnClickListener {

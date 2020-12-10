@@ -21,9 +21,7 @@ class SmsCodeFragment : Fragment() {
         binding.btnConfirmCode.setOnClickListener {
             it.findNavController().navigate(R.id.action_smsCodeFragment_to_newPasswordFragment)
         }
-        binding.tvSendCodeAgain.setOnClickListener {
-            TODO("SEND AGAIN SMS")
-        }
+
         return binding.root
     }
 }

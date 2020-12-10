@@ -75,8 +75,26 @@
         android:name="com.example.madiyar.registrationandauth.FinalRegistrationFragment"
         android:label="fragment_final_registration"
         tools:layout="@layout/fragment_final_registration" />
-    <activity
+    <fragment
         android:id="@+id/userMainPageFragment2"
         android:name="com.example.madiyar.usermain.UserMainPageFragment"
-        android:label="UserMainPageFragment" />
+        android:label="UserMainPageFragment" >
+        <action
+            android:id="@+id/action_userMainPageFragment2_to_orderHistoryDetailedFragment"
+            app:destination="@id/orderHistoryDetailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="com.example.madiyar.usermain.OrderHistoryFragment"
+        android:label="fragment_order_history"
+        tools:layout="@layout/fragment_order_history" >
+        <action
+            android:id="@+id/action_orderHistoryFragment_to_orderHistoryDetailedFragment"
+            app:destination="@id/orderHistoryDetailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderHistoryDetailedFragment"
+        android:name="com.example.madiyar.usermain.OrderHistoryDetailedFragment"
+        android:label="fragment_order_history_detailed"
+        tools:layout="@layout/fragment_order_history_detailed" />
 </navigation>

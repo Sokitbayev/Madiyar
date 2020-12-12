@@ -82,6 +82,12 @@
         <action
             android:id="@+id/action_userMainPageFragment2_to_orderHistoryDetailedFragment"
             app:destination="@id/orderHistoryDetailedFragment" />
+        <action
+            android:id="@+id/action_userMainPageFragment2_to_currentOrdersFragment"
+            app:destination="@id/currentOrdersFragment" />
+        <action
+            android:id="@+id/action_userMainPageFragment2_to_shopFragment"
+            app:destination="@id/shopFragment" />
     </fragment>
     <fragment
         android:id="@+id/orderHistoryFragment"
@@ -97,4 +103,56 @@
         android:name="com.example.madiyar.usermain.OrderHistoryDetailedFragment"
         android:label="fragment_order_history_detailed"
         tools:layout="@layout/fragment_order_history_detailed" />
+    <fragment
+        android:id="@+id/currentOrdersFragment"
+        android:name="com.example.madiyar.usermain.CurrentOrdersFragment"
+        android:label="fragment_current_orders"
+        tools:layout="@layout/fragment_current_orders" >
+        <action
+            android:id="@+id/action_currentOrdersFragment_to_oneCurrentOrderFragment"
+            app:destination="@id/oneCurrentOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneCurrentOrderFragment"
+        android:name="com.example.madiyar.usermain.OneCurrentOrderFragment"
+        android:label="fragment_one_current_order"
+        tools:layout="@layout/fragment_one_current_order" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.madiyar.ordering.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_shopFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.example.madiyar.ordering.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/action_basketFragment_to_paymentMethodFragment"
+            app:destination="@id/paymentMethodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentMethodFragment"
+        android:name="com.example.madiyar.ordering.PaymentMethodFragment"
+        android:label="fragment_payment_method"
+        tools:layout="@layout/fragment_payment_method" >
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.example.madiyar.ordering.ConfirmationFragment"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation" >
+        <action
+            android:id="@+id/action_confirmationFragment_to_userMainPageFragment2"
+            app:destination="@id/userMainPageFragment2"
+            app:popUpTo="@id/userMainPageFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

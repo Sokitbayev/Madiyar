@@ -1,10 +1,438 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".usermain.CurrentOrdersFragment">
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Активные заказы"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                android:textColor="#1D1D1B"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Завершенные заказы переходят во вкладку"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textFontWeight="500"
+                android:textSize="14sp"
+                android:textColor="#929292"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="История Заказов"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textFontWeight="500"
+                android:textSize="14sp"
+                android:textColor="#1394CC"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingHorizontal="15dp"
+                app:cardBackgroundColor="#F9F9F9"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView60">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Заказ №239039832"
+                        android:textColor="#1D1D1B"
+                        android:textFontWeight="500"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="19:34 14.07.2020"
+                        android:textColor="#1D1D1B"
+                        android:textFontWeight="500"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Исмагулов Руслан"
+                        android:textColor="#1D1D1B"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView46"
+                        app:tint="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Асыл Арман 2, кв 142"
+                        android:textColor="#1D1D1B"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView6"
+                        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:paddingStart="47dp"
+                        android:paddingEnd="10dp"
+                        android:text="Дом перед аптекой “Здоров как бык”, третий подъезд."
+                        android:textColor="#929292"
+                        android:textFontWeight="500"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+                    <TextView
+                        android:id="@+id/textView49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="625тг"
+                        android:textColor="#1D1D1B"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+                    <TextView
+                        android:id="@+id/textView61"
+                        android:layout_width="122dp"
+                        android:layout_height="25dp"
+                        android:text="Ожидает"
+                        android:background="#1394CC"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="14sp"
+                        android:textFontWeight="600"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingHorizontal="15dp"
+                app:cardBackgroundColor="#F9F9F9"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView421"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Заказ №239039832"
+                        android:textColor="#1D1D1B"
+                        android:textFontWeight="500"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView431"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="19:34 14.07.2020"
+                        android:textColor="#1D1D1B"
+                        android:textFontWeight="500"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView461"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Исмагулов Руслан"
+                        android:textColor="#1D1D1B"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView421" />
+
+                    <ImageView
+                        android:id="@+id/imageView61"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView461"
+                        app:tint="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:id="@+id/textView471"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Асыл Арман 2, кв 142"
+                        android:textColor="#1D1D1B"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView61"
+                        app:layout_constraintTop_toBottomOf="@+id/textView461" />
+
+                    <TextView
+                        android:id="@+id/textView481"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:paddingStart="47dp"
+                        android:paddingEnd="10dp"
+                        android:text="Дом перед аптекой “Здоров как бык”, третий подъезд."
+                        android:textColor="#929292"
+                        android:textFontWeight="500"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView471" />
+
+                    <TextView
+                        android:id="@+id/textView491"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="625тг"
+                        android:textColor="#1D1D1B"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView481" />
+
+                    <TextView
+                        android:id="@+id/textView611"
+                        android:layout_width="122dp"
+                        android:layout_height="25dp"
+                        android:text="Доставляют"
+                        android:background="#1394CC"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="14sp"
+                        android:textFontWeight="600"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingHorizontal="15dp"
+                app:cardBackgroundColor="#F9F9F9"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView422"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Заказ №239039832"
+                        android:textColor="#1D1D1B"
+                        android:textFontWeight="500"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView432"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="19:34 14.07.2020"
+                        android:textColor="#1D1D1B"
+                        android:textFontWeight="500"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView462"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Исмагулов Руслан"
+                        android:textColor="#1D1D1B"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView422" />
+
+                    <ImageView
+                        android:id="@+id/imageView62"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView462"
+                        app:tint="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:id="@+id/textView472"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Асыл Арман 2, кв 142"
+                        android:textColor="#1D1D1B"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView62"
+                        app:layout_constraintTop_toBottomOf="@+id/textView462" />
+
+                    <TextView
+                        android:id="@+id/textView482"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:paddingStart="47dp"
+                        android:paddingEnd="10dp"
+                        android:text="Дом перед аптекой “Здоров как бык”, третий подъезд."
+                        android:textColor="#929292"
+                        android:textFontWeight="500"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView472" />
+
+                    <TextView
+                        android:id="@+id/textView492"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="625тг"
+                        android:textColor="#1D1D1B"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView482" />
+
+                    <TextView
+                        android:id="@+id/textView612"
+                        android:layout_width="122dp"
+                        android:layout_height="25dp"
+                        android:text="Изменен"
+                        android:background="#FF9950"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="14sp"
+                        android:textFontWeight="600"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </layout>

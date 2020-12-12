@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.madiyar.R
 import com.example.madiyar.databinding.FragmentUserMainPageBinding
 import com.google.android.material.tabs.TabLayout
@@ -17,10 +18,34 @@ class UserMainPageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val binding = DataBindingUtil.inflate<FragmentUserMainPageBinding>(inflater, R.layout.fragment_user_main_page,container,false)
+        configurePager(binding)
+        onClickNavigation(binding)
+        return binding.root
+    }
+
+    private fun onClickNavigation(binding: FragmentUserMainPageBinding) {
+        binding.cvCurrentOrders.setOnClickListener {
+            it.findNavController()
+                .navigate(R.id.action_userMainPageFragment2_to_currentOrdersFragment)
+        }
+        binding.button.setOnClickListener {
+            it.findNavController()
+                .navigate(R.id.action_userMainPageFragment2_to_currentOrdersFragment)
+        }
+        binding.ivTmart.setOnClickListener {
+            it.findNavController().navigate(R.id.action_userMainPageFragment2_to_shopFragment)
+        }
+        binding.ivZhasmine.setOnClickListener {
+            it.findNavController().navigate(R.id.action_userMainPageFragment2_to_shopFragment)
+        }
+    }
+
+    private fun configurePager(binding: FragmentUserMainPageBinding) {
         binding.pager.adapter = TabPagerAdapter(childFragmentManager)
         binding.tabLayout.tabGravity = TabLayout.GRAVITY_FILL
         binding.pager.addOnPageChangeListener(
-            TabLayout.TabLayoutOnPageChangeListener(binding.tabLayout))
+            TabLayout.TabLayoutOnPageChangeListener(binding.tabLayout)
+        )
         binding.tabLayout.addOnTabSelectedListener(object :
             TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
@@ -38,37 +63,6 @@ class UserMainPageFragment : Fragment() {
         })
 
         binding.tabLayout.setupWithViewPager(binding.pager)
-        return binding.root
     }
 
-    /*private fun configureTabLayout() {
-
-        tab_layout.addTab(tab_layout.newTab().setText("Профиль"))
-        tab_layout.addTab(tab_layout.newTab().setText("Избранное"))
-        tab_layout.addTab(tab_layout.newTab().setText("История заказов"))
-
-        val adapter = fragmentManager?.let {
-            TabPagerAdapter(
-                it,
-                tab_layout.tabCount)
-        }
-        pager.adapter = adapter
-
-        pager.addOnPageChangeListener(
-            TabLayout.TabLayoutOnPageChangeListener(tab_layout))
-        tab_layout.addOnTabSelectedListener(object :
-            TabLayout.OnTabSelectedListener {
-            override fun onTabSelected(tab: TabLayout.Tab) {
-                pager.currentItem = tab.position
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab) {
-
-            }
-
-            override fun onTabReselected(tab: TabLayout.Tab) {
-
-            }
-
-        })}*/
 }

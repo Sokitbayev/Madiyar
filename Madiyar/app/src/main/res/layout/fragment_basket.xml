@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ordering.BasketFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="51dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Итоговая сумма"
+                android:textColor="#1D1D1B"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:text="780тг"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textFontWeight="600"
+                android:textSize="24sp"
+                android:textColor="#1D1D1B"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Комментарий к заказу"
+                android:fontFamily="@font/montserrat_regular"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:textColor="#929292"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView68">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Я сижу во дворе"
+                    android:textColor="#1D1D1B"
+                    android:textFontWeight="600"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:text="Очистить"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textFontWeight="500"
+                android:textSize="14sp"
+                android:textColor="#1394CC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#F9F9F9"
+                android:background="#F9F9F9"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView70">
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="21dp"
+                        android:src="@drawable/snickers"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView73"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Яблоки Ташкентские"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+                        android:textColor="#1D1D1B"
+                        app:layout_constraintStart_toEndOf="@+id/imageView9"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView76"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Фрукты"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textFontWeight="500"
+                        android:textSize="11sp"
+                        android:textColor="#929292"
+                        app:layout_constraintStart_toEndOf="@+id/imageView9"
+                        app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+                    <TextView
+                        android:id="@+id/textView77"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"
+                        android:text="1 кг"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textFontWeight="500"
+                        android:textSize="12sp"
+                        android:textColor="#1D1D1B"
+                        app:layout_constraintStart_toEndOf="@+id/imageView9"
+                        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="136dp"
+                        android:src="@drawable/ic_baseline_add_circle_outline_24"
+                        app:layout_constraintEnd_toStartOf="@+id/textView78"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ic_baseline_remove_circle_outline_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="45dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginHorizontal="17dp"
+                        app:cardCornerRadius="8dp"
+
+                        android:background="@drawable/card_amount"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView18"
+                        app:layout_constraintStart_toEndOf="@+id/imageView19"
+                        app:layout_constraintTop_toBottomOf="@id/imageView9">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="1 кг"
+                            android:textColor="#1D1D1B"
+                            android:textFontWeight="400"
+                            android:textSize="14sp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView78"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="21dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="250тг"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="#1D1D1B"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="14dp"
+                        android:src="@drawable/ic_baseline_delete_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="#FF6666" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#F9F9F9"
+                android:background="#F9F9F9"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView91"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="21dp"
+                        android:src="@drawable/milk"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView731"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Молоко Натиже"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+                        android:textColor="#1D1D1B"
+                        app:layout_constraintStart_toEndOf="@+id/imageView91"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView761"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Молочные продукты"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textFontWeight="500"
+                        android:textSize="11sp"
+                        android:textColor="#929292"
+                        app:layout_constraintStart_toEndOf="@+id/imageView91"
+                        app:layout_constraintTop_toBottomOf="@+id/textView731" />
+
+                    <TextView
+                        android:id="@+id/textView771"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"
+                        android:text="1 шт"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textFontWeight="500"
+                        android:textSize="12sp"
+                        android:textColor="#1D1D1B"
+                        app:layout_constraintStart_toEndOf="@+id/imageView91"
+                        app:layout_constraintTop_toBottomOf="@+id/textView761" />
+
+                    <ImageView
+                        android:id="@+id/imageView181"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="136dp"
+                        android:src="@drawable/ic_baseline_add_circle_outline_24"
+                        app:layout_constraintEnd_toStartOf="@+id/textView781"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView91" />
+
+                    <ImageView
+                        android:id="@+id/imageView191"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ic_baseline_remove_circle_outline_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView91" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="45dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginHorizontal="17dp"
+                        app:cardCornerRadius="8dp"
+
+                        android:background="@drawable/card_amount"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView181"
+                        app:layout_constraintStart_toEndOf="@+id/imageView191"
+                        app:layout_constraintTop_toBottomOf="@id/imageView91">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="1 шт"
+                            android:textColor="#1D1D1B"
+                            android:textFontWeight="400"
+                            android:textSize="14sp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView781"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="21dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="450тг"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="#1D1D1B"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView81"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="14dp"
+                        android:src="@drawable/ic_baseline_delete_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="#FF6666" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#F9F9F9"
+                android:background="#F9F9F9"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView1">
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView912"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="21dp"
+                        android:src="@drawable/milk"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView7312"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Молоко Натиже"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+                        android:textColor="#1D1D1B"
+                        app:layout_constraintStart_toEndOf="@+id/imageView912"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView7612"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Молочные продукты"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textFontWeight="500"
+                        android:textSize="11sp"
+                        android:textColor="#929292"
+                        app:layout_constraintStart_toEndOf="@+id/imageView912"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7312" />
+
+                    <TextView
+                        android:id="@+id/textView7712"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"
+                        android:text="1 шт"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textFontWeight="500"
+                        android:textSize="12sp"
+                        android:textColor="#1D1D1B"
+                        app:layout_constraintStart_toEndOf="@+id/imageView912"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7612" />
+
+                    <ImageView
+                        android:id="@+id/imageView1812"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="136dp"
+                        android:src="@drawable/ic_baseline_add_circle_outline_24"
+                        app:layout_constraintEnd_toStartOf="@+id/textView7812"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView912" />
+
+                    <ImageView
+                        android:id="@+id/imageView1912"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ic_baseline_remove_circle_outline_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView912" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="45dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginHorizontal="17dp"
+                        app:cardCornerRadius="8dp"
+
+                        android:background="@drawable/card_amount"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView1812"
+                        app:layout_constraintStart_toEndOf="@+id/imageView1912"
+                        app:layout_constraintTop_toBottomOf="@id/imageView912">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="1 шт"
+                            android:textColor="#1D1D1B"
+                            android:textFontWeight="400"
+                            android:textSize="14sp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView7812"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="21dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="450тг"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="#1D1D1B"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView812"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="14dp"
+                        android:src="@drawable/ic_baseline_delete_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="#FF6666" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_arrange"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button_blue_bg"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Оформить заказ"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

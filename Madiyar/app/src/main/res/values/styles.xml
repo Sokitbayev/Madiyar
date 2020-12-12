@@ -34,4 +34,16 @@
     <style name="BackgroundCustomTheme" parent="@android:style/Theme.Light">
         <item name="backgroundColor">#FFFFFF</item>
     </style>
+
+
+    <style name="MyRatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@android:color/holo_green_light</item>
+        <item name="colorControlActivated">#FF9950</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">30dp</item>
+        <item name="cornerSizeTopLeft">30dp</item>
+    </style>
 </resources>

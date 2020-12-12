@@ -87,6 +87,7 @@
             android:id="@+id/btn_enter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/button_white_bg"
             android:fontFamily="@font/montserrat_bold"

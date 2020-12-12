@@ -83,6 +83,7 @@
                 android:id="@+id/btn_next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="@string/next"
                 android:background="@drawable/button_blue_bg"
                 android:fontFamily="@font/montserrat_bold"

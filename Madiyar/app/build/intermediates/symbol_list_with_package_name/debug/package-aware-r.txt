@@ -1600,12 +1600,15 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_blue_bg
+drawable button_grey_bg
+drawable button_orange_bg
 drawable button_white_bg
 drawable card_amount
 drawable card_bg
 drawable card_bg_blue
 drawable card_edge
 drawable card_empty_bg
+drawable card_orange_bg
 drawable checked
 drawable city
 drawable common_full_open_on_phone
@@ -1649,6 +1652,7 @@ drawable ic_baseline_delete_24
 drawable ic_baseline_error_outline_24
 drawable ic_baseline_location_on_24
 drawable ic_baseline_remove_circle_outline_24
+drawable ic_baseline_search_24
 drawable ic_baseline_timelapse_24
 drawable ic_bin
 drawable ic_launcher_background
@@ -1689,6 +1693,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable orange
+drawable rice1
+drawable rice2
+drawable rice3
 drawable shop
 drawable shop_on_map
 drawable shop_on_map_second
@@ -1813,7 +1821,9 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
+id bottom_sheet
 id bounce
+id btn_add
 id btn_arrange
 id btn_basket
 id btn_choose_method
@@ -1826,6 +1836,10 @@ id btn_order
 id btn_register
 id btn_submit
 id button
+id button2
+id button3
+id button6
+id button8
 id buttonPanel
 id cache_measures
 id cancel_action
@@ -1834,6 +1848,7 @@ id cardView
 id cardView1
 id cardView2
 id cardView3
+id cardView33
 id cardView4
 id cardView5
 id card_view
@@ -1869,7 +1884,9 @@ id currentOrdersFragment
 id custom
 id customPanel
 id cut
+id cv_apple
 id cv_current_orders
+id cv_orange
 id dark
 id dataBinding
 id date_picker_actions
@@ -1971,7 +1988,10 @@ id imageView19
 id imageView191
 id imageView1912
 id imageView2
+id imageView20
+id imageView201
 id imageView21
+id imageView22
 id imageView3
 id imageView31
 id imageView4
@@ -2006,6 +2026,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id masked
@@ -2177,6 +2198,17 @@ id textStart
 id textView
 id textView1
 id textView10
+id textView100
+id textView101
+id textView102
+id textView1021
+id textView103
+id textView1031
+id textView104
+id textView1041
+id textView105
+id textView106
+id textView107
 id textView11
 id textView12
 id textView13
@@ -2295,6 +2327,9 @@ id textView93
 id textView94
 id textView95
 id textView96
+id textView97
+id textView98
+id textView99
 id textWatcher
 id text_input_end_icon
 id text_input_start_icon
@@ -2423,6 +2458,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout custom_dialog
+layout delete
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -2518,7 +2554,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-layout user_main_bottom_sheet
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap ic_tmart
